@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Summary Report - POC 2</h1>
+
+  <!-- Summary Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of summaryData">
+        <td>{{ item.category }}</td>
+        <td>{{ item.value }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Pie Chart -->
+  <canvas id="pieChart" width="400" height="400"></canvas>
+</div>
